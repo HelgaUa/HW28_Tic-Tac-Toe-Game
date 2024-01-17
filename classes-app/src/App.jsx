@@ -24,7 +24,7 @@ class App extends Component {
         }
     };
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate() {
         const isWinner = calculateWinner(this.state.squares);
         console.log(isWinner);
         if (isWinner) {
